@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24987530-fcdc-4f3b-b5f2-7365c0ae2f21" name="Default" comment="" />
+    <list default="true" id="24987530-fcdc-4f3b-b5f2-7365c0ae2f21" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_111102_shear1_Q1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_111102_shear2_Q2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_111103_shear1_Q1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_111103_shear2_Q2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_120531_shear1_Q1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WT_25deg_120531_shear2_Q2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="wing_anisotropy.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +36,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="10" selection-start="3060" selection-end="3133" vertical-scroll-proportion="0.93245226" vertical-offset="929" max-vertical-offset="1702">
+            <state line="79" column="10" selection-start="3560" selection-end="3562" vertical-scroll-proportion="0.49339208" vertical-offset="1481" max-vertical-offset="2162">
               <folding>
                 <element signature="e#25#67#0" expanded="true" />
               </folding>
@@ -41,6 +51,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -54,7 +72,7 @@
     <option name="width" value="1924" />
     <option name="height" value="1172" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -233,6 +251,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="24987530-fcdc-4f3b-b5f2-7365c0ae2f21" name="Default" comment="" />
@@ -287,7 +322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="10" selection-start="3060" selection-end="3133" vertical-scroll-proportion="0.93245226" vertical-offset="929" max-vertical-offset="1702">
+        <state line="79" column="10" selection-start="3560" selection-end="3562" vertical-scroll-proportion="0.49339208" vertical-offset="1481" max-vertical-offset="2162">
           <folding>
             <element signature="e#25#67#0" expanded="true" />
           </folding>
