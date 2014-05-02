@@ -19,22 +19,22 @@ def fill_zeros(s,k):
     return s
 
 inPath = '/data/biophys/etournay/'
-inName = 'WT_25deg_120531'
+inName = 'WT_25deg_111103'
 
-Rdata_path = '/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/WT_25deg_120531/shear_contrib/'
+Rdata_path = '/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/WT_25deg_111103/shear_contrib/'
 triList_name = 'triList.RData'
 Ta_name = 'Ta_t.RData'
 ro.r('load("'+Rdata_path+triList_name+'")')
 triList_df = com.load_data('triList')
 ro.r('load("'+Rdata_path+Ta_name+'")')
 Ta_df = com.load_data('Ta_t')
-ro.r('load("/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/WT_25deg_120531/roi_bt/lgRoiInclDead.RData")')
+ro.r('load("/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/WT_25deg_111103/roi_bt/lgRoiInclDead.RData")')
 roi_df = com.load_data('lgRoiInclDead')
 roi_balde = roi_df[roi_df['roi']=='blade']
 
 
 inPath = '/data/biophys/etournay/'
-inName = 'WT_25deg_120531'
+inName = 'WT_25deg_111103'
 inDB = inPath+'DB/'+inName+'/'+inName+'.sqlite'
 con = lite.connect(inDB)
 cells_df = psql.frame_query('SELECT * FROM cells WHERE cell_id>10000', con)
@@ -61,12 +61,12 @@ Q2 = Q*np.sin(twophi)
 
 
 
-shear_path = '/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/movies_data/wild_type/120531/blade/dualMarginDeformation.dat'
+shear_path = '/home/mpopovic/Documents/Work/Projects/drosophila_wing_analysis/movies_data/wild_type/111103/blade/dualMarginDeformation.dat'
 shear_df = pp.read_csv(shear_path, sep='\t')
 shear1 = np.cumsum(0.5*(shear_df['Delta u_{xx};']-shear_df['Delta u_{yy}']))
 shear2 = np.cumsum(0.5*(shear_df['Delta u_{xy};']+shear_df['Delta u_{yx};']))
 
-Q_time = 16+time_data['time_sec'][:203]/3600
+Q_time = 16+time_data['time_sec'][:210]/3600
 shear_time = (np.array(Q_time[1:])+ np.array(Q_time[:-1]))/2.
 
 
@@ -75,8 +75,9 @@ plt.plot(Q_time,0.5*(Q1-Q1[0]), label='0.5 (Q1-Q1[0])')
 plt.plot(shear_time, shear1, label = 'shear1')
 plt.xlabel('time[h]')
 plt.grid()
+plt.ylim(0,0.25)
 plt.legend(loc = 'best')
-plt.savefig('WT_25deg_120531_shear1_Q1.png')
+plt.savefig('WT_25deg_111103_shear1_Q1.png')
 plt.show()
 
 plt.figure()
@@ -85,5 +86,5 @@ plt.plot(shear_time,shear2, label = 'shear2')
 plt.xlabel('time[h]')
 plt.grid()
 plt.legend(loc='best')
-plt.savefig('WT_25deg_120531_shear2_Q2.png')
+plt.savefig('WT_25deg_111103_shear2_Q2.png')
 plt.show()
